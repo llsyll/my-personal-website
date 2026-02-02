@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 
 export default async function Post({ params }: Params) {
     const { slug } = await params;
-    const post = getPostBySlug(slug, ['title', 'date', 'slug', 'content']);
+    const post = getPostBySlug(slug, ['title', 'date', 'slug', 'content', 'tags']);
     const content = await markdownToHtml(post.content || '');
 
     return (
@@ -40,8 +40,17 @@ export default async function Post({ params }: Params) {
             <article>
                 <header style={{ marginBottom: 'var(--spacing-16)' }}>
                     <h1 style={{ fontSize: '2.5rem', fontWeight: 500, marginBottom: 'var(--spacing-4)' }}>{post.title}</h1>
-                    <div style={{ color: 'var(--colors-subtle)', fontSize: '1rem' }}>
+                    <div style={{ color: 'var(--colors-subtle)', fontSize: '1rem', display: 'flex', gap: 'var(--spacing-4)', alignItems: 'center' }}>
                         <DateFormatter dateString={post.date} />
+                        {post.tags && (
+                            <div style={{ display: 'flex', gap: 'var(--spacing-2)' }}>
+                                {post.tags.map((tag: string) => (
+                                    <span key={tag} style={{ backgroundColor: 'var(--colors-accent)', padding: '2px 8px', borderRadius: '4px', fontSize: '0.8rem' }}>
+                                        #{tag}
+                                    </span>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </header>
 

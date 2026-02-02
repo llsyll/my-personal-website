@@ -201,3 +201,12 @@ a:hover {
   letter-spacing: -0.03em;
   font-size: 1.2rem;
 }
+/* Portfolio specific styles */
+.portfolio-item:hover .hover-scale {
+  transform: scale(1.03);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

@@ -7,10 +7,10 @@ export default function Comments() {
         <div style={{ marginTop: 'var(--spacing-16)', borderTop: '1px solid var(--colors-border)', paddingTop: 'var(--spacing-8)' }}>
             <Giscus
                 id="comments"
-                repo="[YOUR_REPO_OWNER]/[YOUR_REPO_NAME]"
-                repoId="[YOUR_REPO_ID]"
+                repo="llsyll/my-personal-website"
+                repoId="R_kgDORGn4AA"
                 category="Announcements"
-                categoryId="[YOUR_CATEGORY_ID]"
+                categoryId="DIC_kwDORGn4AM4C1wo8"
                 mapping="pathname"
                 term="Welcome to my blog!"
                 reactionsEnabled="1"

@@ -26,7 +26,7 @@ export function getProjectBySlug(slug: string, fields: string[] = []) {
 }
 
 function getItemBySlug(slug: string, directory: string, fields: string[] = []) {
-    const realSlug = slug.replace(/\.md$/, '');
+    const realSlug = decodeURIComponent(slug).replace(/\.md$/, '');
     const fullPath = path.join(directory, `${realSlug}.md`);
 
     if (!fs.existsSync(fullPath)) {
@@ -51,7 +51,13 @@ function getItemBySlug(slug: string, directory: string, fields: string[] = []) {
         }
 
         if (typeof data[field] !== 'undefined') {
-            items[field] = data[field];
+            let val = data[field];
+            // Decap CMS/Gray-matter parses dates as Date objects
+            // We need to serialize them to strings for Next.js consistency
+            if (val instanceof Date) {
+                val = val.toISOString();
+            }
+            items[field] = val;
         }
     });
 

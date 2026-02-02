@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+# Local testing configuration
+local_backend: true
+
+collections:
+  - name: "posts"
+    label: "文章"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "日期", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", timeFormat: false}
+      - {label: "描述", name: "description", widget: "text"}
+      - {label: "标签", name: "tags", widget: "list", required: false}
+      - {label: "内容", name: "body", widget: "markdown"}
+
+  - name: "projects"
+    label: "作品"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "项目名称", name: "title", widget: "string"}
+      - {label: "描述", name: "description", widget: "text"}
+      - {label: "链接", name: "link", widget: "string", required: false}
+      - {label: "封面图", name: "coverImage", widget: "image", required: false}
+      - {label: "详细介绍", name: "body", widget: "markdown"}

@@ -28,10 +28,10 @@ export default function Header() {
                 justifyContent: 'space-between'
             }}>
                 <Link href="/" className="logo">
-                    X U K E .
+                    P I X E L - W A V E
                 </Link>
 
-                <nav className="flex" style={{ gap: 'var(--spacing-6)' }}>
+                <nav className="flex" style={{ gap: 'var(--spacing-8)' }}>
                     {navItems.map((item) => {
                         const isActive = pathname === item.path || (item.path !== '/' && pathname.startsWith(item.path));
                         return (
