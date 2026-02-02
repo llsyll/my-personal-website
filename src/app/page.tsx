@@ -1,66 +1,74 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { getAllPosts, getAllProjects } from '@/lib/api';
+import DateFormatter from '@/components/DateFormatter';
+import Link from 'next/link';
 
 export default function Home() {
+  const recentPosts = getAllPosts(['title', 'date', 'slug', 'description']).slice(0, 4);
+  const recentProjects = getAllProjects(['title', 'description', 'slug', 'link']).slice(0, 2);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="container">
+      {/* Hero Section */}
+      <section style={{
+        paddingTop: 'var(--spacing-24)',
+        paddingBottom: 'var(--spacing-24)'
+      }}>
+        <h1 style={{ maxWidth: '700px', fontWeight: 500 }}>
+          我是徐可。
+          <br /><span style={{ color: 'var(--colors-subtle)' }}>我构建数字产品，并探索设计的边界。</span>
+        </h1>
+        <div className="flex" style={{ marginTop: 'var(--spacing-8)' }}>
+          <Link href="/about" style={{ borderBottom: '1px solid var(--colors-foreground)', paddingBottom: '2px' }}>
+            更多关于我 →
+          </Link>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Recent Posts - Minimal List */}
+      <section style={{ paddingBottom: 'var(--spacing-24)' }}>
+        <div className="flex justify-between items-end" style={{ marginBottom: 'var(--spacing-8)', borderBottom: '1px solid var(--colors-border)', paddingBottom: 'var(--spacing-4)' }}>
+          <h2 style={{ margin: 0, fontSize: '1.5rem' }}>最新文章</h2>
+          <Link href="/blog" style={{ fontSize: '0.9rem', color: 'var(--colors-subtle)' }}>查看全部</Link>
         </div>
-      </main>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-6)' }}>
+          {recentPosts.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="post-item-hover">
+              <article style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 500 }}>{post.title}</div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--colors-subtle)', fontSize: '0.9rem' }}>
+                  <span>{post.description}</span>
+                  <DateFormatter dateString={post.date} />
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Projects - Simple Grid */}
+      <section style={{ paddingBottom: 'var(--spacing-24)' }}>
+        <div className="flex justify-between items-end" style={{ marginBottom: 'var(--spacing-8)', borderBottom: '1px solid var(--colors-border)', paddingBottom: 'var(--spacing-4)' }}>
+          <h2 style={{ margin: 0, fontSize: '1.5rem' }}>精选作品</h2>
+          <Link href="/portfolio" style={{ fontSize: '0.9rem', color: 'var(--colors-subtle)' }}>查看全部</Link>
+        </div>
+
+        <div className="grid">
+          {recentProjects.map((project) => (
+            <div key={project.slug} style={{ background: 'var(--colors-accent)', padding: 'var(--spacing-8)', borderRadius: 'var(--radius)' }}>
+              <h3 style={{ fontSize: '1.2rem', margin: 0 }}>{project.title}</h3>
+              <p style={{ marginTop: 'var(--spacing-4)', color: 'var(--colors-subtle)', fontSize: '0.95rem', lineHeight: 1.5 }}>
+                {project.description}
+              </p>
+              {project.link && (
+                <div style={{ marginTop: 'var(--spacing-4)' }}>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', textDecoration: 'underline' }}>访问项目</a>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
