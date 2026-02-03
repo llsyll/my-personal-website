@@ -2,15 +2,15 @@
 title: Lonely Planet
 date: 2024-02-02
 description: "MagicaVoxel 练习作品"
-coverImage: /images/Lonely%20Planet-6.webp
+coverImage: /images/5ce47b175365.webp
 images:
-  - /images/Lonely%20Planet-9.png
-  - /images/Lonely%20Planet-1.webp
-  - /images/Lonely%20Planet-2.webp
-  - /images/Lonely%20Planet-3.webp
-  - /images/Lonely%20Planet-4.webp
-  - /images/Lonely%20Planet-5.webp
-  - /images/Lonely%20Planet-6.webp
-  - /images/Lonely%20Planet-7.webp
-  - /images/Lonely%20Planet-8.webp
+  - /images/be7418e4a5c4.png
+  - /images/76f9bc5061a5.webp
+  - /images/4eb75d62e3ed.webp
+  - /images/c6645262608b.webp
+  - /images/632a21f041a5.webp
+  - /images/ce477f5185ff.webp
+  - /images/5ce47b175365.webp
+  - /images/4ce78f70bfff.webp
+  - /images/0eb045a7fc4a.webp
 ---

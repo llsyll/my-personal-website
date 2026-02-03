@@ -1,19 +1,19 @@
 ---
 title: Plusfactory's Holiday Card
 description: 贺卡类型的网站
-coverImage: "/images/Plusfactory%27s%20Holiday%20Card-5.jpg"
+coverImage: "/images/778046e9f905.jpg"
 images:
-  - "/images/Plusfactory%27s%20Holiday%20Card-5.jpg"
-  - "/images/Plusfactory%27s%20Holiday%20Card-6.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-1.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-10.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-11.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-2.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-3.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-4.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-7.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-8.webp"
-  - "/images/Plusfactory%27s%20Holiday%20Card-9.webp"
+  - "/images/778046e9f905.jpg"
+  - "/images/e365593b5b49.webp"
+  - "/images/9eea2451838c.webp"
+  - "/images/336e063c11de.webp"
+  - "/images/08ee40bccd2c.webp"
+  - "/images/e3b22f731729.webp"
+  - "/images/cbed9bd4f883.webp"
+  - "/images/0c4a3d081bdd.webp"
+  - "/images/2f619b07ac3f.webp"
+  - "/images/db692567ecaa.webp"
+  - "/images/29b39be04807.webp"
 ---
 我们在年终都会做一个贺卡类型的网站。每到这时我们能发挥一点非常珍贵的想象力。
 好了，说一下这个网站吧。

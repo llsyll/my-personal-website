@@ -2,12 +2,12 @@
 title: Personal work：Tech zen mind
 date: 2024-02-02
 description: 个人创作项目，探索科技与禅意的融合设计理念。
-coverImage: /images/Personal%20work%20Tech%20zen%20mind-2.webp
+coverImage: /images/47f772bdff0d.webp
 images:
-  - /images/Personal%20work%20Tech%20zen%20mind-1.webp
-  - /images/Personal%20work%20Tech%20zen%20mind-2.webp
-  - /images/Personal%20work%20Tech%20zen%20mind-3.webp
-  - /images/Personal%20work%20Tech%20zen%20mind-4.webp
+  - /images/b7db60142e39.webp
+  - /images/47f772bdff0d.webp
+  - /images/525fedef5858.webp
+  - /images/652a1d032e38.webp
 ---
 
 ## 项目背景

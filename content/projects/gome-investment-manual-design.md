@@ -2,14 +2,14 @@
 title: GOME Investment Manual design
 date: 2024-02-02
 description: "gome Investment Manual design"
-coverImage: /images/GOME%20Investment%20Manual%20design-3.jpg
+coverImage: /images/26e4f1122fcc.jpg
 images:
-  - /images/GOME%20Investment%20Manual%20design-1.jpg
-  - /images/GOME%20Investment%20Manual%20design-2.jpg
-  - /images/GOME%20Investment%20Manual%20design-3.jpg
-  - /images/GOME%20Investment%20Manual%20design-4.jpg
-  - /images/GOME%20Investment%20Manual%20design-5.jpg
-  - /images/GOME%20Investment%20Manual%20design-6.jpg
-  - /images/GOME%20Investment%20Manual%20design-7.jpg
-  - /images/GOME%20Investment%20Manual%20design-8.jpg
+  - /images/abd817413ebb.jpg
+  - /images/b24d2618122f.jpg
+  - /images/26e4f1122fcc.jpg
+  - /images/7dbd8c3bf4a6.jpg
+  - /images/e7e1e87c7e93.jpg
+  - /images/e2d53d3cec48.jpg
+  - /images/163d8a0133e6.jpg
+  - /images/1949ca4079a9.jpg
 ---
