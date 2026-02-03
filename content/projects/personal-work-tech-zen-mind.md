@@ -1,9 +1,13 @@
 ---
-title: "Personal work：Tech zen mind"
-date: "2024-02-02"
-description: "个人创作项目，探索科技与禅意的融合设计理念。"
-link: "https://www.behance.net/gallery/xxx/Personal-work-Tech-zen-mind"
-coverImage: ""
+title: Personal work：Tech zen mind
+date: 2024-02-02
+description: 个人创作项目，探索科技与禅意的融合设计理念。
+coverImage: /images/Personal work Tech zen mind-2.webp
+images:
+  - /images/Personal work Tech zen mind-1.webp
+  - /images/Personal work Tech zen mind-2.webp
+  - /images/Personal work Tech zen mind-3.webp
+  - /images/Personal work Tech zen mind-4.webp
 ---
 
 ## 项目背景

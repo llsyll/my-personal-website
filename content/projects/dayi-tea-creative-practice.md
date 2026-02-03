@@ -1,9 +1,13 @@
 ---
-title: "大益茶创意练习"
-date: "2024-02-02"
-description: "创意设计项目，专注于大益茶品牌的视觉表达与创意呈现。"
-link: "https://www.behance.net/gallery/xxx/大益茶创意练习"
-coverImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/4e35bc85382709.5d7a0c9a45699.jpg"
+title: 大益茶创意练习
+date: 2024-02-02
+description: 创意设计项目，专注于大益茶品牌的视觉表达与创意呈现。
+coverImage: https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/4e35bc85382709.5d7a0c9a45699.jpg
+images:
+  - /images/04c2c585382709.5d7a0c9a46886.webp
+  - /images/15821585382709.5d7a0c9a462a4.webp
+  - /images/57db3a85382709.5d7a0c9a44fa8.webp
+  - /images/b738eb85382709.5d7a0c9a45cc2.webp
 ---
 
 ## 项目背景

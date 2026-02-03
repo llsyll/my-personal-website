@@ -1,25 +1,15 @@
 ---
-title: "GOME Investment Manual design"
-date: "2024-02-02"
-description: "国美投资手册设计，专业金融文档的视觉优化方案。"
-link: "https://www.behance.net/gallery/xxx/GOME-Investment-Manual-design"
-coverImage: ""
+title: GOME Investment Manual design
+date: 2024-02-02
+description: "gome Investment Manual design"
+coverImage: /images/GOME Investment Manual design-3.jpg
+images:
+  - /images/GOME Investment Manual design-1.jpg
+  - /images/GOME Investment Manual design-2.jpg
+  - /images/GOME Investment Manual design-3.jpg
+  - /images/GOME Investment Manual design-4.jpg
+  - /images/GOME Investment Manual design-5.jpg
+  - /images/GOME Investment Manual design-6.jpg
+  - /images/GOME Investment Manual design-7.jpg
+  - /images/GOME Investment Manual design-8.jpg
 ---
-
-## 项目背景
-
-为国美集团设计的投资手册，包含复杂的财务数据和投资信息，需要清晰专业的视觉呈现。
-
-## 设计理念
-
-以专业、可信赖为核心，通过清晰的图表和规范的排版，提升复杂信息的可读性。
-
-## 核心元素
-
-1. **数据可视化**：将复杂数据转化为直观图表，便于理解
-2. **版面规划**：科学的信息层级划分，确保阅读流畅性
-3. **品牌规范**：严格遵循国美品牌视觉规范，保持一致性
-
-## 项目成果
-
-提高了投资手册的专业形象和信息传达效率。

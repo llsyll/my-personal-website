@@ -1,25 +1,21 @@
 ---
-title: "工行司法拍卖 h5游戏 素材设计 ICBC Judicial Auctions h5 Game"
-date: "2024-02-02"
-description: "工行司法拍卖H5游戏的素材设计，提升用户体验与参与度。"
-link: "https://www.behance.net/gallery/xxx/工行司法拍卖-h5游戏-素材设计"
-coverImage: ""
+title: 工行司法拍卖 h5游戏 素材设计 ICBC Judicial Auctions h5 Game
+date: 2024-02-02
+description: "工行司法拍卖 h5游戏 素材设计 使用体素搭建模型，将拍卖品类实体化 ICBC Judicial Auctions h5 Game Material Design Create models using voxels to materialize auction items"
+coverImage: /images/ICBC Judicial Auctions h5 Game-14.png
+images:
+  - /images/ICBC Judicial Auctions h5 Game-1.webp
+  - /images/ICBC Judicial Auctions h5 Game-2.webp
+  - /images/ICBC Judicial Auctions h5 Game-3.webp
+  - /images/ICBC Judicial Auctions h5 Game-4.webp
+  - /images/ICBC Judicial Auctions h5 Game-5.webp
+  - /images/ICBC Judicial Auctions h5 Game-6.webp
+  - /images/ICBC Judicial Auctions h5 Game-7.png
+  - /images/ICBC Judicial Auctions h5 Game-8.png
+  - /images/ICBC Judicial Auctions h5 Game-9.png
+  - /images/ICBC Judicial Auctions h5 Game-10.png
+  - /images/ICBC Judicial Auctions h5 Game-11.webp
+  - /images/ICBC Judicial Auctions h5 Game-12.png
+  - /images/ICBC Judicial Auctions h5 Game-13.png
+  - /images/ICBC Judicial Auctions h5 Game-14.png
 ---
-
-## 项目背景
-
-为工商银行司法拍卖平台设计的H5互动游戏素材，旨在通过游戏化的方式提升用户参与度和平台活跃度。
-
-## 设计理念
-
-结合金融行业的严谨性与游戏的趣味性，创造既专业又有趣的视觉体验。
-
-## 核心元素
-
-1. **界面设计**：简洁直观的操作界面，便于用户快速上手
-2. **视觉风格**：统一的品牌视觉语言，强化品牌形象
-3. **动效设计**：流畅的交互动效，提升用户体验
-
-## 项目成果
-
-显著提升了用户在平台的停留时间及参与度，获得了良好的用户反馈。

@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Noto_Serif_SC } from "next/font/google";
+import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import "./globals.css";
 
-const notoSerif = Noto_Serif_SC({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-  variable: "--font-noto-serif",
+  variable: "--font-inter",
   display: "swap",
-  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -22,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={notoSerif.variable}>
+    <html lang="zh-CN" className={inter.variable} suppressHydrationWarning>
       <body>
         <Header />
         {children}

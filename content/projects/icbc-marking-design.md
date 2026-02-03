@@ -1,25 +1,12 @@
 ---
-title: "ICBC marking design"
-date: "2024-02-02"
-description: "工商银行营销活动视觉设计，品牌推广与用户触达方案。"
-link: "https://www.behance.net/gallery/xxx/ICBC-marking-design"
-coverImage: ""
+title: ICBC marking design
+date: 2024-02-02
+description: "ICBC marking design"
+coverImage: /images/ICBC marking design-3.webp
+images:
+  - /images/ICBC marking design-1.webp
+  - /images/ICBC marking design-2.webp
+  - /images/ICBC marking design-3.webp
+  - /images/ICBC marking design-4.webp
+  - /images/ICBC marking design-5.gif
 ---
-
-## 项目背景
-
-为工商银行设计的营销活动视觉方案，旨在提升品牌知名度和客户转化率。
-
-## 设计理念
-
-结合工行稳健可靠的品牌形象，设计具有吸引力的营销视觉，促进业务增长。
-
-## 核心元素
-
-1. **品牌规范**：严格遵循工行品牌VI规范，确保品牌一致性
-2. **营销导向**：以转化为目标的视觉设计，突出优惠信息
-3. **用户触达**：多场景适配的设计，覆盖不同接触点
-
-## 项目成果
-
-有效提升了营销活动的点击率和转化效果。

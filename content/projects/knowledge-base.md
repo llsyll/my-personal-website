@@ -2,7 +2,6 @@
 title: "个人知识库工具"
 date: "2024-01-15"
 description: "一个基于 Markdown 的现代化个人知识管理系统，支持双向链接和 AI 辅助搜索。"
-link: "https://github.com/yourusername/knowledge-base"
 coverImage: "" # Placeholder, will show CSS pattern
 ---
 

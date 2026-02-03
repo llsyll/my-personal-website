@@ -1,6 +1,7 @@
 import { getAllPosts, getAllProjects } from '@/lib/api';
 import DateFormatter from '@/components/DateFormatter';
 import Link from 'next/link';
+import HackerText from '@/components/HackerText';
 
 export default function Home() {
   const recentPosts = getAllPosts(['title', 'date', 'slug', 'description']).slice(0, 4);
@@ -14,7 +15,7 @@ export default function Home() {
         paddingBottom: 'var(--spacing-24)'
       }}>
         <h1 style={{ maxWidth: '700px', fontWeight: 500 }}>
-          我是Pixel Wave。
+          <HackerText text="我是Pixel Wave" />。
           <br /><span style={{ color: 'var(--colors-subtle)' }}>我构建数字产品，并探索设计的边界。</span>
         </h1>
         <div className="flex" style={{ marginTop: 'var(--spacing-8)' }}>

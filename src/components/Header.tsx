@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import HackerText from './HackerText';
 
 export default function Header() {
     const pathname = usePathname();
@@ -21,14 +22,17 @@ export default function Header() {
             zIndex: 50,
             borderBottom: '1px solid var(--colors-border)'
         }}>
-            <div className="container" style={{
+            <div style={{
                 height: '80px',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-between'
+                justifyContent: 'space-between',
+                padding: '0 2rem',
+                maxWidth: '100%',
+                margin: '0 auto'
             }}>
                 <Link href="/" className="logo">
-                    P I X E L - W A V E
+                    <HackerText text="P I X E L - W A V E" />
                 </Link>
 
                 <nav className="flex" style={{ gap: 'var(--spacing-8)' }}>

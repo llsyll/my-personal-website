@@ -1,9 +1,15 @@
 ---
-title: "ICBC - Opening School Season Marketing Poster"
-date: "2024-02-02"
-description: "工行开学季营销活动海报设计，针对学生群体的金融产品推广。"
-link: "https://www.behance.net/gallery/xxx/ICBC-Opening-School-Season-Marketing-Poster"
-coverImage: ""
+title: ICBC - Opening School Season Marketing Poster
+date: 2024-02-02
+description: 工行开学季营销活动海报设计，针对学生群体的金融产品推广。
+coverImage: /images/b838c869155703.5b769679d1135.webp
+images:
+  - /images/770d4869155703.5b76883b3aede.webp
+  - /images/69eafa69155703.5b769679d15e7.webp
+  - /images/990b9a69155703.5b769679d035b.webp
+  - /images/b838c869155703.5b769679d1135.webp
+  - /images/ae1e2169155703.5b769679d095f.webp
+  - /images/2f14af69155703.5b769679d0d3e.webp
 ---
 
 ## 项目背景

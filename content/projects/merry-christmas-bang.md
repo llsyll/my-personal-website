@@ -1,25 +1,10 @@
 ---
-title: "merry christmas bang"
-date: "2024-02-02"
-description: "圣诞节主题创意设计，节日氛围的视觉表达。"
-link: "https://www.behance.net/gallery/xxx/merry-christmas-bang"
-coverImage: ""
+title: merry christmas bang
+date: 2024-02-02
+description: "merry christmas bang - magicavoxel art work"
+coverImage: /images/merry christmas bang-2.png
+images:
+  - /images/merry christmas bang-3.png
+  - /images/merry christmas bang-1.png
+  - /images/merry christmas bang-2.png
 ---
-
-## 项目背景
-
-为圣诞节设计的主题创意作品，通过视觉设计传递节日的喜悦与温馨。
-
-## 设计理念
-
-融合传统圣诞元素与现代设计语言，营造欢乐祥和的节日氛围。
-
-## 核心元素
-
-1. **色彩搭配**：经典的红绿金配色，体现节日气氛
-2. **图形设计**：雪花、圣诞树等传统元素的现代化演绎
-3. **字体设计**：温馨的手写体风格，增加亲和力
-
-## 项目成果
-
-成功传达了节日的温馨与快乐，获得广泛喜爱。

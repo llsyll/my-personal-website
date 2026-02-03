@@ -1,25 +1,18 @@
 ---
-title: "JD home proposal project"
-date: "2024-02-02"
-description: "京东家居提案项目设计，家居产品展示与推广方案。"
-link: "https://www.behance.net/gallery/xxx/JD-home-proposal-project"
-coverImage: ""
+title: JD home proposal project
+date: 2024-02-02
+description: 京东家居提案设计。使用magicavoxel 建模渲染，ps完善平面设计，flash实现动画效果。 JD home proposal
+  project “No confession no love” Use magicavoxel to create home scenes, use ps
+  to complete the graphic design, use flash to complete the animation.
+coverImage: /images/JD home proposal project-1.gif
+images:
+  - /images/JD home proposal project-8.webp
+  - /images/JD home proposal project-2.webp
+  - /images/JD home proposal project-3.webp
+  - /images/JD home proposal project-4.webp
+  - /images/JD home proposal project-5.webp
+  - /images/JD home proposal project-6.gif
+  - /images/JD home proposal project-7.gif
+  - /images/JD home proposal project-1.gif
+  - /images/JD home proposal project-9.webp
 ---
-
-## 项目背景
-
-为京东家居频道设计的提案项目，展示各类家居产品及其应用场景。
-
-## 设计理念
-
-通过真实的生活场景还原，让用户更好地感受产品的实用性和美观性。
-
-## 核心元素
-
-1. **场景搭建**：精心设计的家居场景，增强代入感
-2. **产品展示**：突出家居产品的设计亮点和功能特性
-3. **色彩搭配**：和谐的色彩组合，营造舒适的家居氛围
-
-## 项目成果
-
-提升了家居产品的展示效果和用户的购买欲望。
