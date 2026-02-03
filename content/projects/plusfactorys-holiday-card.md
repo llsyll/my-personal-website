@@ -1,19 +1,19 @@
 ---
 title: Plusfactory's Holiday Card
 description: 贺卡类型的网站
-coverImage: "/images/Plusfactory's Holiday Card-5.jpg"
+coverImage: "/images/Plusfactory%27s%20Holiday%20Card-5.jpg"
 images:
-  - "/images/Plusfactory's Holiday Card-5.jpg"
-  - "/images/Plusfactory's Holiday Card-6.webp"
-  - "/images/Plusfactory's Holiday Card-1.webp"
-  - "/images/Plusfactory's Holiday Card-10.webp"
-  - "/images/Plusfactory's Holiday Card-11.webp"
-  - "/images/Plusfactory's Holiday Card-2.webp"
-  - "/images/Plusfactory's Holiday Card-3.webp"
-  - "/images/Plusfactory's Holiday Card-4.webp"
-  - "/images/Plusfactory's Holiday Card-7.webp"
-  - "/images/Plusfactory's Holiday Card-8.webp"
-  - "/images/Plusfactory's Holiday Card-9.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-5.jpg"
+  - "/images/Plusfactory%27s%20Holiday%20Card-6.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-1.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-10.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-11.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-2.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-3.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-4.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-7.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-8.webp"
+  - "/images/Plusfactory%27s%20Holiday%20Card-9.webp"
 ---
 我们在年终都会做一个贺卡类型的网站。每到这时我们能发挥一点非常珍贵的想象力。
 好了，说一下这个网站吧。
