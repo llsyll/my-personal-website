@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import { BASE_PATH } from './constants';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 const projectsDirectory = path.join(process.cwd(), 'content/projects');
@@ -86,5 +87,12 @@ export function getAllProjects(fields: string[] = []) {
 
 export async function markdownToHtml(markdown: string) {
     const result = await remark().use(html).process(markdown);
-    return result.toString();
+    let content = result.toString();
+
+    // Prepend BASE_PATH to local image sources
+    if (BASE_PATH) {
+        content = content.replace(/src="\/images\//g, `src="${BASE_PATH}/images/`);
+    }
+
+    return content;
 }

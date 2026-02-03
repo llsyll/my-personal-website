@@ -1,6 +1,7 @@
 import { getAllProjects } from '@/lib/api';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { BASE_PATH } from '@/lib/constants';
 import styles from './portfolio.module.css';
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function Portfolio() {
                     <Link key={project.slug} href={`/portfolio/${project.slug}`} className={styles.item}>
                         {project.coverImage ? (
                             <img
-                                src={project.coverImage}
+                                src={project.coverImage.startsWith('/') ? `${BASE_PATH}${project.coverImage}` : project.coverImage}
                                 alt={project.title}
                                 className={styles.image}
                             />

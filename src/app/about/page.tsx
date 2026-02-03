@@ -1,4 +1,5 @@
 import styles from './about.module.css';
+import { BASE_PATH } from '@/lib/constants';
 
 export const metadata = {
     title: '关于我 | 个人介绍',
@@ -7,9 +8,11 @@ export const metadata = {
 export default function About() {
     return (
         <div className="container">
+            {/* ... */}
+
             <div className={styles.container}>
                 <header className={styles.header}>
-                    <img src="/images/profile.png" alt="Profile" className={styles.avatar} />
+                    <img src={`${BASE_PATH}/images/profile.png`} alt="Profile" className={styles.avatar} />
                     <h1 className={styles.title}>About Me</h1>
                 </header>
 
