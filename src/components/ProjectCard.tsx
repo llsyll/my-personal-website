@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { BASE_PATH } from '@/lib/constants';
+// BASE_PATH is now passed as a prop
 
 interface ProjectCardProps {
     title: string;
@@ -10,12 +10,13 @@ interface ProjectCardProps {
     slug?: string;
     image?: string;
     index: number;
+    basePath?: string; // Add basePath prop
 }
 
-export default function ProjectCard({ title, description, link, slug, image, index }: ProjectCardProps) {
+export default function ProjectCard({ title, description, link, slug, image, index, basePath = '' }: ProjectCardProps) {
     // Handle image path for GitHub Pages
-    // If path starts with slash, prepend BASE_PATH
-    const displayImage = image ? (image.startsWith('/') ? `${BASE_PATH}${image}` : image) : null;
+    // If path starts with slash and basePath is provided, prepend it
+    const displayImage = image ? (image.startsWith('/') ? `${basePath}${image}` : image) : null;
 
     return (
         <div style={{
