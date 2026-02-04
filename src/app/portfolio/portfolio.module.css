@@ -5,32 +5,12 @@
     padding: 0;
 }
 
-.header {
-    text-align: center;
-    padding: var(--spacing-16) var(--spacing-4);
-    background-color: var(--colors-background);
-}
-
-.pageTitle {
-    font-weight: 500;
-    font-size: 3rem;
-    letter-spacing: -0.04em;
-    margin-bottom: var(--spacing-4);
-}
-
-.subtitle {
-    color: var(--colors-subtle);
-    font-size: 1.125rem;
-}
 
 .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
     gap: 4px;
-    /* Gap between items */
-    padding: 4px;
-    /* Outer padding */
     background-color: var(--colors-background);
 }
 
@@ -44,7 +24,6 @@
     .grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 6px;
-        padding: 6px;
     }
 }
 

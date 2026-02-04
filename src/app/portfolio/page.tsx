@@ -12,10 +12,10 @@ export default function Portfolio() {
     const projects = getAllProjects(['title', 'description', 'slug', 'link', 'coverImage']);
 
     return (
-        <div className={styles.container}>
-            <header className={styles.header}>
-                <h1 className={styles.pageTitle}>Selected Works</h1>
-                <p className={styles.subtitle}>
+        <div className="container" style={{ paddingTop: '4rem' }}>
+            <header className="page-header-container">
+                <h1 className="page-title">Selected Works</h1>
+                <p className="text-body-lg">
                     Design & Development Portfolio
                 </p>
             </header>

@@ -1,14 +1,16 @@
 :root {
-  /* Minimalist Color System - Monochrome */
-  --colors-background: #ffffff;
-  --colors-foreground: #111111;
-  --colors-subtle: #777777;
-  /* For dates, captions */
-  --colors-border: #eaeaea;
-  --colors-accent: #f5f5f5;
-  /* Hover states */
+  /* Minimalist Color System - Monochrome (Rennan Match) */
+  --colors-background: #FFFFFF;
+  /* Elegant Off-White */
+  --colors-foreground: #131313;
+  /* Near Black */
+  --colors-subtle: #A1A1A1;
+  /* Muted Gray */
+  --colors-border: #E0E0E0;
+  --colors-accent: #E8E8E8;
+  /* Slightly darker than bg */
 
-  /* Spacing - Increased for "breathing room" */
+  /* Spacing */
   --spacing-1: 0.25rem;
   --spacing-2: 0.5rem;
   --spacing-4: 1rem;
@@ -16,29 +18,27 @@
   --spacing-12: 3rem;
   --spacing-16: 4rem;
   --spacing-24: 6rem;
-  /* Large section gaps */
 
   /* Typography */
-  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-sohne), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Georgia", serif;
-  /* Alias for design system consumption */
-  /* Use serif as primary font per user request */
 
   /* Layout */
-  --container-width: 900px;
-  /* Narrower for readability */
-  --container-padding: 1.5rem;
-  --radius: 4px;
-  /* Sharper corners for minimalist look */
+  --container-width: 1200px;
+  /* Match Match */
+  --container-padding: 2rem;
+  --radius: 0px;
+  /* Reference implies sharp or very subtle radius. Let's go sharp/minimal. */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --colors-background: #000000;
-    --colors-foreground: #F5F5F7;
-    --colors-subtle: #888888;
+    /* Dark mode override - preserving the "vibe" but dark */
+    --colors-background: #131313;
+    --colors-foreground: #F1F0EE;
+    --colors-subtle: #666666;
     --colors-border: #333333;
-    --colors-accent: #111111;
+    --colors-accent: #1A1A1A;
   }
 }
 
@@ -53,36 +53,39 @@ body {
   color: var(--colors-foreground);
   background: var(--colors-background);
   font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 14px;
+  /* Rennan Base Size */
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
+/* Typography Scale */
 /* Typography Scale */
 h1,
 h2,
 h3,
 h4 {
   font-weight: 500;
-  /* Lighter weights for elegance */
+  /* Regular/Medium looks cleaner than Bold for headings in this style */
   color: var(--colors-foreground);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  /* Tighter tracking */
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  /* Tighter tracking for headings */
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: var(--spacing-4);
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: var(--spacing-4);
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: var(--spacing-2);
 }
 
@@ -110,7 +113,15 @@ a:hover {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 var(--container-padding);
+  padding: 0 1.5rem;
+  /* Mobile default: tighter padding */
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+    /* Desktop: Standard padding */
+  }
 }
 
 .flex {
@@ -212,4 +223,68 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* --- Global Design System (Derived from About Page) --- */
+
+.page-header-container {
+  margin-bottom: 6rem;
+  padding-top: 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--colors-foreground);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.section-label {
+  font-size: 1rem;
+  color: var(--colors-foreground);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Split Layout: Bio (Left) / Content (Right) */
+.split-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .split-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    /* Tablet gap */
+  }
+}
+
+@media (min-width: 1024px) {
+  .split-layout {
+    gap: 8rem;
+    /* Large Desktop gap */
+  }
+}
+
+/* Typography Standards */
+.text-body-lg {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.text-body-md {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #777;
+}
+
+.text-subtle {
+  font-size: 0.9rem;
+  color: var(--colors-subtle);
 }

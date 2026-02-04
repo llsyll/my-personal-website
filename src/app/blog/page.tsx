@@ -11,9 +11,9 @@ export default function BlogIndex() {
     const allPosts = getAllPosts(['title', 'date', 'slug', 'description', 'tags']);
 
     return (
-        <div className="container" style={{ paddingBottom: 'var(--spacing-24)' }}>
-            <header style={{ paddingTop: 'var(--spacing-24)', paddingBottom: 'var(--spacing-16)' }}>
-                <h1 style={{ fontWeight: 500 }}>全部文章</h1>
+        <div className="container" style={{ paddingTop: '4rem', paddingBottom: 'var(--spacing-24)' }}>
+            <header className="page-header-container">
+                <h1 className="page-title">Blog</h1>
             </header>
 
             <div className="flex-col" style={{ gap: 'var(--spacing-12)' }}>
@@ -23,11 +23,11 @@ export default function BlogIndex() {
                             <div style={{ marginBottom: 'var(--spacing-2)', color: 'var(--colors-subtle)', fontSize: '0.9rem' }}>
                                 <DateFormatter dateString={post.date} />
                             </div>
-                            <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-2)', fontWeight: 500 }}>
+                            <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-2)', fontWeight: 400 }}>
                                 {post.title}
                             </h2>
-                            <p style={{ color: 'var(--colors-subtle)', maxWidth: '600px' }}>{post.description}</p>
-                            <div style={{ marginTop: 'var(--spacing-4)', fontSize: '0.9rem', textDecoration: 'underline' }}>阅读全文</div>
+                            <p className="text-body-lg" style={{ color: 'var(--colors-subtle)', maxWidth: '600px' }}>{post.description}</p>
+                            {/* Removed "Read Full" link for cleaner look, title/card is clickable */}
                         </Link>
                     </article>
                 ))}

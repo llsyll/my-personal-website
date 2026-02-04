@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import Header from "@/components/Header";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
+const sohne = localFont({
+  src: [
+    {
+      path: '../fonts/Sohne-Buch.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Sohne-Kraftig.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-sohne',
 });
 
 export const metadata: Metadata = {
@@ -20,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={inter.variable} suppressHydrationWarning>
+    <html lang="zh-CN" className={sohne.variable} suppressHydrationWarning>
       <body>
         <Header />
         {children}
