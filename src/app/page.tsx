@@ -3,6 +3,7 @@ import { getAllProjects } from '@/lib/api';
 // import DateFormatter from '@/components/DateFormatter'; 
 // import Link from 'next/link'; // ProjectCard handles links
 import ProjectCard from '@/components/ProjectCard';
+import { BASE_PATH } from '@/lib/constants';
 
 export default function Home() {
   const allProjects = getAllProjects(['title', 'description', 'slug', 'link', 'coverImage']);
@@ -26,6 +27,7 @@ export default function Home() {
               link={project.link}
               image={project.coverImage}
               index={index}
+              basePath={BASE_PATH}
             />
           ))}
         </div>
