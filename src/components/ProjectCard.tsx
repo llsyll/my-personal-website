@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
+import { BASE_PATH } from '@/lib/constants';
 
 interface ProjectCardProps {
     title: string;
@@ -13,14 +13,15 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ title, description, link, slug, image, index }: ProjectCardProps) {
-    // Removed alternating order to enforce "Left Text / Right Image" layout as requested.
+    // Handle image path for GitHub Pages
+    // If path starts with slash, prepend BASE_PATH
+    const displayImage = image ? (image.startsWith('/') ? `${BASE_PATH}${image}` : image) : null;
 
     return (
         <div style={{
             display: 'flex',
             flexDirection: 'column', // Mobile first
             gap: '2rem',
-            // marginBottom: '6rem', // Removed to reduce spacing (controlled by parent)
         }} className="project-card-desktop">
 
             {/* Meta/Text Side - Simplified */}
@@ -28,11 +29,9 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                 flex: 1,
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'flex-start', // Top alignment often cleaner without box
+                justifyContent: 'flex-start',
                 textAlign: 'left',
-                // backgroundColor removed
-                // padding removed
-                minHeight: '200px', // Reduced min-height
+                minHeight: '200px',
                 height: '100%',
             }}>
                 <div>
@@ -44,8 +43,6 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                         {description}
                     </p>
                 </div>
-
-                {/* View Project Link Removed */}
             </div>
 
             {/* Image Side - Simplified */}
@@ -54,28 +51,29 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                 width: '100%',
                 height: '100%',
                 cursor: 'pointer',
-                // backgroundColor removed
-                // padding removed
-                display: 'block', // Default
+                display: 'block',
             }}>
                 <Link href={slug ? `/portfolio/${slug}` : (link || '#')} style={{ width: '100%', height: '100%', display: 'block' }}>
                     <div style={{
                         width: '100%',
                         height: '100%',
-                        minHeight: '300px', // Ensure visibility
+                        minHeight: '300px',
                         position: 'relative',
                         overflow: 'hidden',
-                        // No border radius requested, maybe sharp is better for "exquisite"
                     }}>
-                        {/* Image Placeholder or Actual Image */}
-                        {image ? (
-                            <Image
-                                src={image}
+                        {displayImage ? (
+                            <img
+                                src={displayImage}
                                 alt={title}
-                                fill
-                                style={{ objectFit: 'cover' }} // Transition removed
+                                style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover'
+                                }}
                                 className="project-image"
-                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         ) : (
                             <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--colors-subtle)', background: '#f9f9f9' }}>
