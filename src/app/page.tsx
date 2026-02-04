@@ -3,7 +3,9 @@ import { getAllProjects } from '@/lib/api';
 // import DateFormatter from '@/components/DateFormatter'; 
 // import Link from 'next/link'; // ProjectCard handles links
 import ProjectCard from '@/components/ProjectCard';
-import { BASE_PATH } from '@/lib/constants';
+
+// Force the check here to avoid import issues
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/my-personal-website' : '';
 
 export default function Home() {
   const allProjects = getAllProjects(['title', 'description', 'slug', 'link', 'coverImage']);
