@@ -68,65 +68,33 @@ export default function ProjectCard({ title, description, link, slug, image, ind
     }
 
     return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column', // Mobile first
-            gap: '2rem',
-        }} className="project-card-desktop">
+        <div className="project-card">
 
             {/* Meta/Text Side */}
-            <div style={{
-                flex: 1,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'flex-start',
-                textAlign: 'left',
-                minHeight: '200px',
-                height: '100%',
-            }}>
+            <div className="text-content">
                 <div>
-                    <span style={{ fontSize: '0.85rem', color: '#666', marginBottom: '1rem', display: 'block', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    <span className="project-label">
                         Project
                     </span>
-                    <h3 style={{ fontSize: '1.5rem', fontWeight: 500, marginBottom: '2rem' }}>{title}</h3>
-                    <p style={{ fontSize: '1rem', color: '#555', lineHeight: 1.7, maxWidth: '90%' }}>
+                    <h3 className="project-title">{title}</h3>
+                    <p className="project-description">
                         {description}
                     </p>
                 </div>
             </div>
 
             {/* Image Side */}
-            <div style={{
-                flex: 1,
-                width: '100%',
-                height: '100%',
-                cursor: 'pointer',
-                display: 'block',
-            }}>
+            <div className="image-content">
                 <Link href={slug ? `/portfolio/${slug}` : (link || '#')} style={{ width: '100%', height: '100%', display: 'block' }}>
-                    <div style={{
-                        width: '100%',
-                        height: '100%',
-                        minHeight: '300px',
-                        position: 'relative',
-                        overflow: 'hidden',
-                    }}>
+                    <div className="image-wrapper">
                         {displayImage ? (
                             <img
                                 src={displayImage}
                                 alt={title}
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '100%',
-                                    objectFit: 'cover'
-                                }}
                                 className="project-image"
                             />
                         ) : (
-                            <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--colors-subtle)', background: '#f9f9f9' }}>
+                            <div className="no-image-placeholder">
                                 No Image
                             </div>
                         )}
@@ -135,14 +103,107 @@ export default function ProjectCard({ title, description, link, slug, image, ind
             </div>
 
             <style jsx>{`
-        @media (min-width: 768px) {
-            .project-card-desktop {
-                flex-direction: row !important;
-                gap: 4rem !important;
-                text-align: left;
-            }
-        }
-      `}</style>
+                .project-card {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.75rem; /* Mobile: Tighter gap between text and image */
+                }
+
+                .text-content {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    text-align: left;
+                    min-height: auto; /* Allow it to shrink on mobile */
+                }
+
+                .project-label {
+                    font-size: 0.85rem;
+                    color: #666;
+                    margin-bottom: 0.5rem; /* Mobile: Reduced margin */
+                    display: block;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                }
+
+                .project-title {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    margin-bottom: 0.75rem; /* Mobile: Reduced margin */
+                }
+
+                .project-description {
+                    font-size: 1rem;
+                    color: #555;
+                    line-height: 1.6;
+                    max-width: 100%;
+                }
+
+                .image-content {
+                    flex: 1;
+                    width: 100%;
+                    cursor: pointer;
+                    display: block;
+                }
+
+                .image-wrapper {
+                    width: 100%;
+                    min-height: 240px; /* Mobile: Slightly smaller min-height */
+                    position: relative;
+                    overflow: hidden;
+                    aspect-ratio: 4/3; /* Enforce aspect ratio on mobile */
+                }
+
+                .project-image {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .no-image-placeholder {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--colors-subtle);
+                    background: #f9f9f9;
+                }
+
+                @media (min-width: 768px) {
+                    .project-card {
+                        flex-direction: row;
+                        gap: 4rem; /* Desktop: Restore wide gap */
+                    }
+                    
+                    .text-content {
+                         min-height: 200px;
+                         height: 100%;
+                    }
+
+                    .project-label {
+                        margin-bottom: 1rem;
+                    }
+
+                    .project-title {
+                        margin-bottom: 2rem;
+                    }
+
+                    .project-description {
+                        max-width: 90%;
+                    }
+                    
+                    .image-wrapper {
+                        min-height: 300px;
+                        aspect-ratio: auto;
+                        height: 100%;
+                    }
+                }
+            `}</style>
         </div>
     );
 }
