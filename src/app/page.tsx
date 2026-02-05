@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
 
         {/* Project Grid */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '6rem', marginTop: '4rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem', marginTop: '4rem' }}>
           {allProjects.map((project, index) => (
             <ProjectCard
               key={project.slug}

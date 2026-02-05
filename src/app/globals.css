@@ -244,7 +244,7 @@ img {
 .section-label {
   font-size: 1rem;
   color: var(--colors-foreground);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -282,6 +282,8 @@ img {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #777;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
 }
 
 .text-subtle {

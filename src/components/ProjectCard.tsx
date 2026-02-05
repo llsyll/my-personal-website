@@ -73,9 +73,6 @@ export default function ProjectCard({ title, description, link, slug, image, ind
             {/* Meta/Text Side */}
             <div className="text-content">
                 <div>
-                    <span className="project-label">
-                        Project
-                    </span>
                     <h3 className="project-title">{title}</h3>
                     <p className="project-description">
                         {description}
@@ -118,19 +115,11 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                     min-height: auto;
                 }
 
-                .project-label {
-                    font-size: 0.85rem;
-                    color: #666;
-                    margin-bottom: 0.25rem; /* Mobile: Ultra-tight margin */
-                    display: block;
-                    text-transform: uppercase;
-                    letter-spacing: 0.05em;
-                }
-
                 .project-title {
                     font-size: 1.5rem;
                     font-weight: 500;
-                    margin-bottom: 0.5rem; /* Mobile: Ultra-tight margin */
+                    margin-top: 0rem;
+                    margin-bottom: 0rem;
                 }
 
                 .project-description {
@@ -190,7 +179,8 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                     }
 
                     .project-title {
-                        margin-bottom: 2rem;
+                        margin-top: 0rem;
+                        margin-bottom: 0rem;
                     }
 
                     .project-description {
