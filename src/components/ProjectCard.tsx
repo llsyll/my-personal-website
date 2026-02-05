@@ -106,7 +106,7 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                 .project-card {
                     display: flex;
                     flex-direction: column;
-                    gap: 0.75rem; /* Mobile: Tighter gap between text and image */
+                    gap: 0.5rem; /* Mobile: Ultra-tight gap */
                 }
 
                 .text-content {
@@ -115,13 +115,13 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                     flex-direction: column;
                     justify-content: flex-start;
                     text-align: left;
-                    min-height: auto; /* Allow it to shrink on mobile */
+                    min-height: auto;
                 }
 
                 .project-label {
                     font-size: 0.85rem;
                     color: #666;
-                    margin-bottom: 0.5rem; /* Mobile: Reduced margin */
+                    margin-bottom: 0.25rem; /* Mobile: Ultra-tight margin */
                     display: block;
                     text-transform: uppercase;
                     letter-spacing: 0.05em;
@@ -130,7 +130,7 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                 .project-title {
                     font-size: 1.5rem;
                     font-weight: 500;
-                    margin-bottom: 0.75rem; /* Mobile: Reduced margin */
+                    margin-bottom: 0.5rem; /* Mobile: Ultra-tight margin */
                 }
 
                 .project-description {
@@ -149,10 +149,10 @@ export default function ProjectCard({ title, description, link, slug, image, ind
 
                 .image-wrapper {
                     width: 100%;
-                    min-height: 240px; /* Mobile: Slightly smaller min-height */
+                    min-height: 240px;
                     position: relative;
                     overflow: hidden;
-                    aspect-ratio: 4/3; /* Enforce aspect ratio on mobile */
+                    aspect-ratio: 4/3;
                 }
 
                 .project-image {
@@ -177,7 +177,7 @@ export default function ProjectCard({ title, description, link, slug, image, ind
                 @media (min-width: 768px) {
                     .project-card {
                         flex-direction: row;
-                        gap: 4rem; /* Desktop: Restore wide gap */
+                        gap: 4rem; /* Desktop: Wide gap */
                     }
                     
                     .text-content {
