@@ -1,7 +1,6 @@
 import { getProjectBySlug, getAllProjects, markdownToHtml } from '@/lib/api';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { BASE_PATH } from '@/lib/constants';
 
 type Params = {
     params: Promise<{
@@ -56,7 +55,7 @@ export default async function Project({ params }: Params) {
                     <div style={{ marginBottom: 'var(--spacing-16)' }}>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                            src={project.coverImage.startsWith('/') ? `${BASE_PATH}${project.coverImage}` : project.coverImage}
+                            src={project.coverImage}
                             alt={project.title}
                             style={{ width: '100%', borderRadius: 'var(--radius)' }}
                         />
@@ -78,7 +77,7 @@ export default async function Project({ params }: Params) {
                             <div key={index} style={{ backgroundColor: '#f5f5f5' }}>
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
-                                    src={img.startsWith('/') ? `${BASE_PATH}${img}` : img}
+                                    src={img}
                                     alt={`${project.title} gallery ${index + 1}`}
                                     style={{ width: '100%', display: 'block' }}
                                 />

@@ -4,9 +4,6 @@ import { getAllProjects } from '@/lib/api';
 // import Link from 'next/link'; // ProjectCard handles links
 import ProjectCard from '@/components/ProjectCard';
 
-// Force the check here to avoid import issues
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/my-personal-website' : '';
-
 export default function Home() {
   const allProjects = getAllProjects(['title', 'description', 'slug', 'link', 'coverImage']);
 
@@ -29,7 +26,6 @@ export default function Home() {
               link={project.link}
               image={project.coverImage}
               index={index}
-              basePath={BASE_PATH}
             />
           ))}
         </div>

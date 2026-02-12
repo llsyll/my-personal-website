@@ -9,10 +9,9 @@ interface PortfolioItemProps {
     description: string;
     slug: string;
     image?: string;
-    basePath?: string;
 }
 
-export default function PortfolioItem({ title, description, slug, image, basePath = '' }: PortfolioItemProps) {
+export default function PortfolioItem({ title, description, slug, image }: PortfolioItemProps) {
     const itemRef = useRef<HTMLAnchorElement>(null);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -39,19 +38,15 @@ export default function PortfolioItem({ title, description, slug, image, basePat
         };
     }, []);
 
-    const displayImage = image
-        ? (image.startsWith('/') ? `${basePath}${image}` : image)
-        : null;
-
     return (
         <Link
             ref={itemRef}
             href={`/portfolio/${slug}`}
             className={`${styles.item} ${isVisible ? styles.active : ''}`}
         >
-            {displayImage ? (
+            {image ? (
                 <img
-                    src={displayImage}
+                    src={image}
                     alt={title}
                     className={styles.image}
                 />

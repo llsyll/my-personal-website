@@ -16,9 +16,9 @@ export default function BlogIndex() {
                 <h1 className="page-title">Blog</h1>
             </header>
 
-            <div className="flex-col" style={{ gap: 'var(--spacing-12)' }}>
+            <div className="flex-col" style={{ gap: 'var(--spacing-16)' }}>
                 {allPosts.map((post) => (
-                    <article key={post.slug} style={{ borderBottom: '1px solid var(--colors-border)', paddingBottom: 'var(--spacing-8)' }}>
+                    <article key={post.slug} style={{ borderBottom: '1px solid var(--colors-border)', paddingBottom: 'var(--spacing-8)', paddingTop: 'var(--spacing-4)' }}>
                         <Link href={`/blog/${post.slug}`} className="group">
                             <div style={{ marginBottom: 'var(--spacing-2)', color: 'var(--colors-subtle)', fontSize: '0.9rem' }}>
                                 <DateFormatter dateString={post.date} />

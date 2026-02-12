@@ -87,12 +87,5 @@ export function getAllProjects(fields: string[] = []) {
 
 export async function markdownToHtml(markdown: string) {
     const result = await remark().use(html).process(markdown);
-    let content = result.toString();
-
-    // Prepend BASE_PATH to local image sources
-    if (BASE_PATH) {
-        content = content.replace(/src="\/images\//g, `src="${BASE_PATH}/images/`);
-    }
-
-    return content;
+    return result.toString();
 }
